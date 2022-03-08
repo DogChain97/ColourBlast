@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Colour Blast</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Prompt&family=Anton&family=Press+Start+2P&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="game-wrap">
+      <div class="bgn-snd" id="toggle" onclick="toggleSound">
+        <img src="images/on.png" id="speaker" alt="On/Off">
+      </div>
+      <h1 class="title">COLOUR BLAST</h1>
+      <h2 id="desc">Shoot down as many enemies as possible to rack up the points and avoid the enemy bullets in the process.<br><br /><b id="question">HOW MANY POINTS CAN YOU SCORE?!</b></h2>
+      <canvas width="1000px" height="600" id="game"></canvas>
+      <div class="buttons">
+        <button id="play" onclick="myFunction">PLAY</button>
+        <button class="lvl" id="easy" onclick="playLvlE">EASY</button>
+        <button class="lvl" id="normal" onclick="playLvlN">NORMAL</button>
+        <button class="lvl" id="hard" onclick="playLvlH">HARD</button>
+        <button id="diffLvl" onclick="playDiffLvl">CHOOSE DIFFERENT LEVEL</button>
+      </div>
+      <p id="lvlDesc">LEVELS:<br /><br />EASY: There will be 5 enemies and you have 5 lives.<br /><br />NORMAL: There will be 7 enemies and you have 3 lives.<br /><br />HARD: There will be 10 enemies and you have 1 life.</p>
+      <p id="instructions1">Use the  <b>LEFT</b>  and  <b>RIGHT</b>  arrow keys or the  <b>A</b>  and  <b>D</b>  keys to move. Use the  <b>SPACEBAR</b>  to shoot.</p>
+      <p id="instructions2">Click on the  <b>PLAY AREA</b>  to  <b>PAUSE/UNPAUSE</b></p>
+    </div>
+  </div>
+
+  <script src="index.js" charset="utf-8"></script>
+</body>
+
+</html>

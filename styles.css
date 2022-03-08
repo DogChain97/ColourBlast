@@ -1,0 +1,134 @@
+html {
+  height: 100%;
+  background: linear-gradient( 45deg,black,#1B2735,black );
+}
+
+body {
+  font-family: 'Prompt', sans-serif;
+}
+
+/* toggle background music img */
+.bgn-snd {
+  right: 0;
+  background-color: white;
+  border-radius: 15%;
+  position: absolute;
+  display: none;
+}
+
+.container {
+  min-height: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.game-wrap {
+  position: relative;
+  padding: 20px 0 0;
+}
+
+canvas {
+  position: relative;
+  max-width: 100%;
+  max-height: 100%;
+  display: none;
+  margin: 0 auto;
+}
+
+/***************************************************TEXT*******************************************/
+
+#desc {
+  color: white;
+  text-align: center;
+  padding: 20px 0 0 0;
+  margin: 0;
+}
+
+#question {
+  font-size: 2em;
+  font-family: 'Archivo Black', sans-serif;
+}
+
+#lvlDesc {
+  color: white;
+  font-size: 1.5em;
+  padding: 20px 0 0 260px;
+  display: none;
+}
+
+#instructions1 {
+  color: white;
+  text-align: center;
+  padding: 50px 0;
+}
+
+#instructions2 {
+  color: white;
+  text-align: center;
+  padding: 0 20px;
+  display: none;
+}
+
+b {
+  color: #cc0264;
+}
+
+p {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.5em;
+}
+
+.title {
+  font-family: 'Press Start 2P', cursive;
+  background: linear-gradient(45deg,red,orange,yellow,green,blue,indigo,violet);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  font-size: 4em;
+  font-weight: 900;
+  margin: 20px 0;
+  padding: 0 0 20px 0;
+  text-align: center;
+}
+
+/*******************************************BUTTONS***********************************************/
+
+.buttons {
+  text-align: center;
+  padding: 6% 0 4% 0;
+}
+
+#play {
+  font-size: 100px;
+  padding: 11px 20px 10px 20px;
+}
+
+.lvl {
+  display: none;
+  font-size: 40px;
+  margin: 0 2% 0 2%;
+}
+
+#diffLvl {
+  display: none;
+  font-size: 40px;
+}
+
+button {
+  border: 0;
+  background: #e8439b;
+  background-image: linear-gradient(to bottom, #e8439b, #cc0264);
+  border-radius: 10px;
+
+  font-family: 'Anton', sans-serif;
+
+  color: #ffffff;
+  font-size: 21px;
+  padding: 11px 20px 10px 20px;
+}
+
+button:hover {
+  background: #3cb0fd;
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+}
